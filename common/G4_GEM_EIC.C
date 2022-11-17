@@ -53,7 +53,7 @@ void EGEMSetup(PHG4Reco *g4Reco)
 
 void FGEMSetup(PHG4Reco *g4Reco, const int N_Sector = 16)
 {
-  make_GEM_station("FGEM_0", g4Reco, 287.0, 1.3, 3.6, N_Sector);
+  make_GEM_station("FGEM_0", g4Reco, 180.0, 1.3, 3.6, N_Sector);
 }
 
 //! Add drift layers to mini TPC

@@ -2,7 +2,8 @@
 #define MACRO_G4SETUPEICDETECTOR_C
 
 #include <G4_BMMG.C>
-#include <G4_TRD.C>
+#include </sphenix/u/kaspel1/macros/common/G4_TRD.C>
+
 
 #include <GlobalVariables.C>
 
@@ -23,7 +24,7 @@
 #include <G4_B0ECAL.C> //for B0 ECAL
 #include <G4_BWD.C> //for Far Backward Detectors
 #include <G4_FST_EIC.C>
-#include <G4_GEM_EIC.C>
+#include </sphenix/u/kaspel1/macros/common/G4_GEM_EIC.C>
 #include <G4_HcalIn_ref.C>
 #include <G4_HcalOut_ref.C>
 #include <G4_Input.C>
@@ -114,11 +115,11 @@ void G4Init()
     cout << "Can not enable BMMG and DIRC at the same time!" << endl;
     gSystem->Exit(1);
   }
-  if ((Enable::TRD||Enable::TRD_GAS) and Enable::RICH)
+  /*  if ((Enable::TRD||Enable::TRD_GAS) and Enable::RICH)
   {
     cout << "Can not enable TRD* and RICH at the same time!" << endl;
     gSystem->Exit(1);
-  }
+    }*/
   if ((Enable::LFHCAL||Enable::EHCAL) and Enable::PLUGDOOR)
   {
     cout << "Can not enable *HCal and PLUGDOOR at the same time!" << endl;

@@ -22,9 +22,9 @@ namespace Enable
 
 namespace TRD
 {
-  double R_max = 180.;
-  double R_min = 15.;
-  double z_mid = 200. + 20;
+  double R_max = 230.;
+  double R_min = 25.;
+  double z_mid = 287. + 6.5;
   double half_length = 6.5;  // Mother volume, radiator = 10 cm
   double z_min = z_mid - half_length;
   double z_max = z_mid + half_length + 10.;
